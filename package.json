@@ -41,7 +41,6 @@
     "ember-forge-ui-bootstrap4-polyfill": "git://github.com/ember-forge/ember-forge-ui-bootstrap4-polyfill.git#acadf2539ee995e8b6ed8bb107b98fa3db5163a9",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
-    "ember-welcome-page": "^1.0.1",
     "loader.js": "^4.0.1"
   }
 }
