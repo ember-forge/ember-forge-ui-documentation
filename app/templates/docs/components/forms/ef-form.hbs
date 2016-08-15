@@ -1,0 +1,167 @@
+<div class="container">
+
+  <h2>ef-form</h2>
+
+  <p class="lead">This component is a wrapper for using all of the other form element components.  It is intended to be bound to an object which the individual form elements get their values from and write updates to.</p>
+
+  <hr>
+
+  <h3>Yielded Components</h3>
+
+  {{#ef-list}}
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}fieldset{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-date{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-email{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-hidden{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-month{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-password{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-search{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-telephone{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-text{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}input-url{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}label{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}legend{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}reset{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}submit{{/link-to}}
+    {{/ef-list-item}}
+
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}textarea{{/link-to}}
+    {{/ef-list-item}}
+  {{/ef-list}}
+
+  <h3>HTML Element</h3>
+  {{#ef-list}}
+    {{#ef-list-item}}
+      form
+    {{/ef-list-item}}
+  {{/ef-list}}
+
+  <h3>HTML Attribute Bindings</h3>
+  {{#ef-list}}
+    {{#ef-list-item}}
+      autocomplete
+    {{/ef-list-item}}
+    {{#ef-list-item}}
+      name
+    {{/ef-list-item}}
+    {{#ef-list-item}}
+      novalidate
+    {{/ef-list-item}}
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}ARIA attributes{{/link-to}}
+    {{/ef-list-item}}
+    {{#ef-list-item}}
+      {{#link-to "docs.components.forms.ef-form"}}Global attributes{{/link-to}}
+    {{/ef-list-item}}
+  {{/ef-list}}
+
+  <h3>Class Name</h3>
+  {{#ef-list}}
+    {{#ef-list-item}}
+      ef-form
+    {{/ef-list-item}}
+  {{/ef-list}}
+
+  <h3>Class Name Bindings</h3>
+  {{#ef-list}}
+    property: class name applied (default state)
+
+    {{#ef-list-item}}
+      none
+    {{/ef-list-item}}
+
+    {{#if showBootstrap}}
+      {{#ef-list-item}}
+        <span class="notify-badge">Bootstrap</span>
+        inline: form-inline (inline: false)
+      {{/ef-list-item}}
+    {{/if}}
+  {{/ef-list}}
+
+  <h3>Properties</h3>
+  {{#property-text name="data" type="Object"}}
+    The object which holds the properties the form fields should edit.
+  {{/property-text}}
+
+  {{#if showBootstrap}}
+    {{#property-text name="inline" type="Boolean" default="false"}}
+      <span class="notify-badge">Bootstrap</span>
+      Whether to display the form inline.
+    {{/property-text}}
+  {{/if}}
+
+
+  <h3>Block/Non-Block Support</h3>
+  {{#ef-list}}
+    {{#ef-list-item}}
+      <p>Block: Yes</p>
+      <p>Non-Block: No</p>
+    {{/ef-list-item}}
+  {{/ef-list}}
+
+  <h3>Example</h3>
+  <div class="row">
+    <div class="col-lg-4">
+      <h6>Template</h6>
+      <pre>
+\{{#ef-form data=model as |f|}}
+  ...
+\{{/ef-form}}
+      </pre>
+    </div>
+    <div class="col-lg-4">
+      <h6>Rendered HTML</h6>
+      <pre>
+&lt;form class="ef-form"&gt;
+  ...
+&lt;/form&gt;
+    </pre>
+    </div>
+    <div class="col-lg-4">
+      <h6>Rendered Component</h6>
+      N/A
+    </div>
+  </div>
+
+</div>

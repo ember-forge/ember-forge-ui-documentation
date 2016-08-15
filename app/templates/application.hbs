@@ -1,0 +1,18 @@
+<nav class="navbar navbar-static-top navbar-light bg-faded">
+  {{#link-to "index" class="navbar-brand"}}ember-forge-ui{{/link-to}}
+
+  {{#ef-nav
+    inline=true
+    as |nav|
+  }}
+    {{#nav.item}}
+      About
+    {{/nav.item}}
+
+    {{#nav.item}}
+      {{#link-to "docs.index"}}Documentation{{/link-to}}
+    {{/nav.item}}
+  {{/ef-nav}}
+</nav>
+
+{{outlet}}

@@ -1,0 +1,47 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 flex-md-top">
+      {{#ef-nav
+        as |nav|
+      }}
+        {{#nav.header}}
+          {{#link-to "docs.components"}}Components{{/link-to}}
+        {{/nav.header}}
+
+        {{#nav.group-header}}
+          Lists
+        {{/nav.group-header}}
+
+        {{#nav.item}}
+          ef-list
+        {{/nav.item}}
+
+        {{#nav.group-header}}
+          {{#link-to "docs.components.forms"}}Forms{{/link-to}}
+        {{/nav.group-header}}
+
+        {{#nav.item}}
+          {{#link-to "docs.components.forms.ef-form"}}ef-form{{/link-to}}
+        {{/nav.item}}
+
+        {{#nav.item}}
+          form/ef-fieldset
+        {{/nav.item}}
+
+        {{#nav.item}}
+          form/ef-legend
+        {{/nav.item}}
+      {{/ef-nav}}
+    </div>
+
+    <div class="col-md-9 flex-md-top">
+      <div class="row">
+        <a href="#" {{action "setCore"}}>Core (ember-forge-ui)</a> | <a href="#" {{action "setBootstrap"}}>Bootstrap</a>
+      </div>
+
+      <div class="row">
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+</div>

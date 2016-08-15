@@ -7,6 +7,15 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('docs', function() {
+    this.route('index');
+
+    this.route('components', function() {
+      this.route('forms', function() {
+        this.route('ef-form');
+      });
+    });
+  });
 });
 
 export default Router;
